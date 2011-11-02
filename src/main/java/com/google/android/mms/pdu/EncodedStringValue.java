@@ -29,7 +29,7 @@ import java.util.logging.Logger;
  */
 public class EncodedStringValue implements Cloneable {
 
-	private static final Logger log = Logger.getLogger(EncodedStringValue.class.getName());
+    private static final Logger log = Logger.getLogger(EncodedStringValue.class.getName());
 
     /**
      * The Char-set value.

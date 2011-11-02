@@ -31,9 +31,9 @@ import java.util.logging.Logger;
 
 public class PduParser {
 
-	private static final Logger log = Logger.getLogger(PduParser.class.getName());
+    private static final Logger log = Logger.getLogger(PduParser.class.getName());
 	
-	/**
+    /**
      *  The next are WAP values defined in WSP specification.
      */
     private static final int QUOTE = 127;

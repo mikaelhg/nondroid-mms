@@ -24,7 +24,7 @@ import com.google.android.mms.InvalidHeaderValueException;
 
 public class SendReq extends MultimediaMessagePdu {
 	
-	private static final Logger log = Logger.getLogger(SendReq.class.getName());
+    private static final Logger log = Logger.getLogger(SendReq.class.getName());
 	
     public SendReq() {
         super();
