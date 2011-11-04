@@ -170,11 +170,9 @@ public class EncodedStringValue implements Cloneable {
                 newTextString.write(mData);
                 newTextString.write(textString);
             } catch (IOException e) {
-                e.printStackTrace();
-                throw new NullPointerException(
-                        "appendTextString: failed when write a new Text-string");
+                throw new RuntimeException(
+                        "appendTextString: failed when write a new Text-string", e);
             }
-
             mData = newTextString.toByteArray();
         }
     }

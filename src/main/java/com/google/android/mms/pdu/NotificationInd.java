@@ -117,6 +117,7 @@ public class NotificationInd extends GenericPdu {
      *
      * @return the value
      */
+    @Override
     public EncodedStringValue getFrom() {
        return mPduHeaders.getEncodedStringValue(PduHeaders.FROM);
     }
@@ -128,6 +129,7 @@ public class NotificationInd extends GenericPdu {
      * @throws NullPointerException if the value is null.
      *         RuntimeException if an undeclared error occurs.
      */
+    @Override
     public void setFrom(EncodedStringValue value) {
         mPduHeaders.setEncodedStringValue(value, PduHeaders.FROM);
     }

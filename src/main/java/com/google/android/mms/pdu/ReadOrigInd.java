@@ -19,7 +19,7 @@ package com.google.android.mms.pdu;
 
 import com.google.android.mms.InvalidHeaderValueException;
 
-public class ReadOrigInd extends GenericPdu {
+public final class ReadOrigInd extends GenericPdu {
     /**
      * Empty constructor.
      * Since the Pdu corresponding to this class is constructed

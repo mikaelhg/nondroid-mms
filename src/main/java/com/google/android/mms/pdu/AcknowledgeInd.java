@@ -22,7 +22,7 @@ import com.google.android.mms.InvalidHeaderValueException;
 /**
  * M-Acknowledge.ind PDU.
  */
-public class AcknowledgeInd extends GenericPdu {
+public final class AcknowledgeInd extends GenericPdu {
     /**
      * Constructor, used when composing a M-Acknowledge.ind pdu.
      *

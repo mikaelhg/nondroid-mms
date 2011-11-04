@@ -19,7 +19,7 @@ package com.google.android.mms.pdu;
 
 import com.google.android.mms.InvalidHeaderValueException;
 
-public class SendConf extends GenericPdu {
+public final class SendConf extends GenericPdu {
     /**
      * Empty constructor.
      * Since the Pdu corresponding to this class is constructed

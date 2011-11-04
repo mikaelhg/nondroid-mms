@@ -22,7 +22,7 @@ import com.google.android.mms.InvalidHeaderValueException;
 /**
  * M-Retrive.conf Pdu.
  */
-public class RetrieveConf extends MultimediaMessagePdu {
+public final class RetrieveConf extends MultimediaMessagePdu {
     /**
      * Empty constructor.
      * Since the Pdu corresponding to this class is constructed

@@ -22,7 +22,7 @@ import com.google.android.mms.InvalidHeaderValueException;
 /**
  * M-NofifyResp.ind PDU.
  */
-public class NotifyRespInd extends GenericPdu {
+public final class NotifyRespInd extends GenericPdu {
     /**
      * Constructor, used when composing a M-NotifyResp.ind pdu.
      *

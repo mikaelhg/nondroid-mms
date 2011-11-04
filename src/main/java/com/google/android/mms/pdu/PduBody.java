@@ -17,12 +17,14 @@
 
 package com.google.android.mms.pdu;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Vector;
+import java.util.LinkedList;
+import java.util.List;
 
 public class PduBody {
-    private Vector<PduPart> mParts = null;
+    private List<PduPart> mParts = null;
 
     private Map<String, PduPart> mPartMapByContentId = null;
     private Map<String, PduPart> mPartMapByContentLocation = null;
@@ -33,7 +35,7 @@ public class PduBody {
      * Constructor.
      */
     public PduBody() {
-        mParts = new Vector<PduPart>();
+        mParts = Collections.synchronizedList(new LinkedList<PduPart>());
 
         mPartMapByContentId = new HashMap<String, PduPart>();
         mPartMapByContentLocation  = new HashMap<String, PduPart>();

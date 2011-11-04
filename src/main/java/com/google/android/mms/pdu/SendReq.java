@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 
 import com.google.android.mms.InvalidHeaderValueException;
 
-public class SendReq extends MultimediaMessagePdu {
+public final class SendReq extends MultimediaMessagePdu {
 	
     private static final Logger log = Logger.getLogger(SendReq.class.getName());
 	

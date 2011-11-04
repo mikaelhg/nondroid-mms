@@ -22,7 +22,7 @@ import com.google.android.mms.InvalidHeaderValueException;
 /**
  * M-Delivery.Ind Pdu.
  */
-public class DeliveryInd extends GenericPdu {
+public final class DeliveryInd extends GenericPdu {
     /**
      * Empty constructor.
      * Since the Pdu corresponding to this class is constructed
